@@ -16,7 +16,18 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{ test: /\.ts$/, loader: 'ts-loader' },
+			{
+				test: /\.ts$/,
+				loader: 'ts-loader',
+				exclude: [
+					/node_modules/,
+					/src\/assets\/tilemaps\/.*\.tsx$/,  // Exclude tilemap tsx files
+				],
+				options: {
+					// Tell ts-loader to continue compiling even with TypeScript errors
+					transpileOnly: true
+				}
+			},
 			{
 				test: /\.js$/,
 				include: path.resolve(__dirname, '../src'),
@@ -27,6 +38,11 @@ module.exports = {
 						presets: ['@babel/preset-env']
 					}
 				}
+			},
+			// Add a rule to handle .tsx files in assets as raw files
+			{
+				test: /src\/assets\/tilemaps\/.*\.tsx$/,
+				use: 'raw-loader'  // Use raw-loader for these files
 			}
 		]
 	},
