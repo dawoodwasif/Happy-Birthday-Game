@@ -21,7 +21,8 @@
 	"devDependencies": {
 		"@babel/core": "^7.27.1",
 		"@babel/preset-env": "^7.27.2",
-		"@types/node": "^14.18.63",
+		"@types/node": "^14.14.14.31",
+		"@types/minimatch": "3.0.5",
 		"awesome-typescript-loader": "5.2.1",
 		"babel-loader": "^10.0.0",
 		"browser-sync": "2.26.14",
@@ -32,7 +33,7 @@
 		"raw-loader": "2.0.0",
 		"ts-loader": "5.3.3",
 		"tslint-config-prettier": "1.18.0",
-		"typescript": "3.3.4000",
+		"typescript": "3.2.4",
 		"webpack": "4.44.2",
 		"webpack-cli": "3.3.8",
 		"webpack-dev-server": "3.11.0",
