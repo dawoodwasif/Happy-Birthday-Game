@@ -1,6 +1,6 @@
 # Happy Birthday Game!
 
-Simple HTML5 game created for the birthday of my beloved girlfriend.  
+Simple HTML5 birthday game.  
 Built with [Phaser 3](https://phaser.io/phaser3) game framework.  
 
 
